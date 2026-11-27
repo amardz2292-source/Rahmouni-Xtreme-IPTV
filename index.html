@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahmouni Hocine TV</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #090b18;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  height: 65px;
+  background: #17152e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid #6545ff;
+}
+
+.logo {
+  color: #a995ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 65px);
+}
+
+.channels {
+  width: 230px;
+  min-width: 190px;
+  background: #17152b;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.channels h3 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.channel-list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.channel {
+  padding: 13px 8px;
+  margin-bottom: 5px;
+  background: #25213f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.channel.active {
+  background: #7048ff;
+}
+
+.bottom-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid #49416e;
+}
+
+.bottom-icons span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(135deg, #11152c, #30205b);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  flex: 1;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #243c82, #542a8a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.tiles {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.tile {
+  flex: 1;
+  padding: 18px 5px;
+  text-align: center;
+  border-radius: 10px;
+  background: #4030a0;
+  font-weight: bold;
+}
+
+.tile:nth-child(2) {
+  background: #b44b35;
+}
+
+.tile:nth-child(3) {
+  background: #702fa5;
+}
+
+@media (max-width: 600px) {
+  .channels {
+    width: 145px;
+    min-width: 145px;
+  }
+
+  .channel {
+    font-size: 12px;
+    padding: 12px 5px;
+  }
+
+  .main {
+    padding: 8px;
+  }
+
+  .hero {
+    font-size: 20px;
+  }
+
+  .tile {
+    font-size: 11px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">👑 XTREME IPTV</div>
+  <div>22:13　🔍 ⚙</div>
+</header>
+
+<div class="container">
+
+  <aside class="channels">
+    <h3>📺 Toutes les chaînes</h3>
+
+    <div class="channel-list">
+      <div class="channel active">001　beIN SPORTS 1</div>
+      <div class="channel">002　beIN SPORTS 2</div>
+      <div class="channel">003　beIN SPORTS 3</div>
+      <div class="channel">004　beIN SPORTS 4</div>
+      <div class="channel">005　beIN SPORTS 5</div>
+      <div class="channel">006　Al Jazeera</div>
+      <div class="channel">007　France 24</div>
+      <div class="channel">008　TF1 HD</div>
+      <div class="channel">009　M6 HD</div>
+      <div class="channel">010　Canal+ HD</div>
+    </div>
+
+    <div class="bottom-icons">
+      <span>🏠</span>
+      <span>📺</span>
+      <span>🎬</span>
+      <span>⚙️</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="hero">
+      RAHMOUNI HOCINE TV
+      <br>
+      🔵🔴 VISCA EL BARÇA
+    </div>
+
+    <div class="tiles">
+      <div class="tile">📺 TV EN DIRECT</div>
+      <div class="tile">🎬 FILMS</div>
+      <div class="tile">🎞️ SERIES</div>
+    </div>
+  </main>
+
+</div>
+
+</body>
+</html>
